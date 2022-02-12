@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+article {
+    width: 500px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 50px auto;
+}
+
+article svg {
+    width: 100%;
+}
+
+/* 기존 svg 파일을 조작할 수 있다. */
+article svg path {
+    fill: transparent;  /* 배경색을 투명하게 */
+    stroke: red;        /* 선 색깔 빨간색으로 */
+    stroke-width: 1;    /* 선의 굵기(벡터 형식의 이미지는 px단위가 아닌 비율 단위를 사용함. 1보다 크면 원래 선보다 굵게, 1보다 작으면 가늘게 나타난다.) */
+}
